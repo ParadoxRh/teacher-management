@@ -39,8 +39,8 @@ app.get('/student',(req:Request, res:Response) => {
           sql.close();
         })
         .catch((err:Error) => {
-          console.error('Error executing query:', err.message);
-          res.status(500).send('An error occurred.');
+          console.error('Error executing query in the server:', err.message);
+          res.status(500).send('An error occurred. ');
           sql.close();
         });
     })
